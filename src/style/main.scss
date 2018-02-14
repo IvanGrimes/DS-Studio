@@ -1,0 +1,64 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/components-font-awesome/scss/font-awesome";
+
+@import "partials/__mixins";
+@import "partials/__variables";
+
+@import "partials/section";
+@import "partials/heading";
+@import "partials/text";
+@import "partials/button";
+@import "partials/accordion";
+
+@import "partials/logo";
+@import "partials/offcanvas";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/header-slider";
+@import "partials/breadcrumbs";
+@import "partials/about";
+@import "partials/advantage";
+@import "partials/portfolio";
+@import "partials/stat";
+@import "partials/feature";
+@import "partials/feature-slider";
+@import "partials/blog";
+@import "partials/blog-full";
+@import "partials/blog-sidebar";
+@import "partials/blog-categories";
+@import "partials/blog-tags";
+@import "partials/blog-latest";
+@import "partials/comments";
+@import "partials/paginator";
+@import "partials/feedback";
+@import "partials/footer";
+@import "partials/contacts";
+
+
+
+
+
+@include font-face(Opensans, '../fonts/OpenSans-Regular', 400, normal, ttf);
+@include font-face(Opensans, '../fonts/OpenSans-SemiBold', 500, normal, ttf);
+@include font-face(Opensans, '../fonts/OpenSans-Bold', 600, bold, ttf);
+
+* {
+    outline: 0;
+}
+
+*:not(.portfolio__item) {
+    transition: all .15s linear;
+}
+
+a {
+    &:hover {
+        color: none;
+        text-decoration: none;
+    }
+}
+
+button {
+    border: none;
+    padding: 0;
+    cursor: pointer
+}

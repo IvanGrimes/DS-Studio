@@ -1,0 +1,139 @@
+.blog {
+    margin-top: 0;
+    @include media-breakpoint-down(md) {
+        margin-top: 50px;
+    }
+    &:not(.blog__page) {
+        margin-top: 20px;
+    }
+}
+
+.blog__item {
+    margin-top: 30px;
+    &:first-child {
+        margin-top: 0;
+    }
+    &:not(.blog__page) {
+        margin-top: 30px;
+    }
+}
+
+.blog__image {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        float: left;
+
+        width: auto;
+    }
+}
+
+.blog__content {
+    overflow: hidden;
+
+    width: 100%;
+    padding: 20px;
+
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    background-color: #fff;
+
+    @include media-breakpoint-up(sm) {
+        width: auto;
+        height: 275px;
+        padding: 20px 15px 15px 20px;
+
+        border-top: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+        border-left: 0;
+        background-color: #fff;
+        &:not(.blog__page) {
+            width: auto;
+            height: 210px;
+            padding: 20px 15px 15px 20px;
+
+            border-top: 1px solid #cccccc;
+            border-right: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            border-left: 0;
+            background-color: #fff;
+            &::before {
+                position: absolute;
+
+                width: 0;
+                height: 0;
+                margin-top: 77px;
+                margin-left: -35px;
+
+                content: '';
+
+                border-width: 7.5px 15px 7.5px 0;
+                border-style: solid;
+                border-color: transparent #fff transparent transparent;
+            }
+        }
+    }
+    @include media-breakpoint-only(xl) {
+        padding-top: 45px;
+    }
+    @include media-breakpoint-only(lg) {
+        padding-top: 35px;
+    }
+    @include media-breakpoint-only(md) {
+        padding-top: 30px;
+    }
+    @include media-breakpoint-only(sm) {
+        padding: 20px 10px 10px 15px;
+    }
+
+    &:not(.blog__page) {
+        &::before {
+            position: absolute;
+
+            width: 0;
+            height: 0;
+            margin-top: -35px;
+            margin-left: 41%;
+
+            content: '';
+
+            border-width: 0 7.5px 15px 7.5px;
+            border-style: solid;
+            border-color: transparent transparent #fff transparent;
+        }
+    }
+}
+
+.blog__link {
+    &:hover {
+        text-decoration: none;
+
+        color: $primary-color;
+    }
+}
+
+%blog__info {
+    color:  #999999;
+
+    font-family: OpenSans;
+    font-size: .75em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+}
+
+.blog__author {
+    @extend %blog__info;
+}
+
+.blog__date {
+    @extend %blog__info;
+}
+
+.blog__text {
+    margin-top: 20px;
+}
+
+.blog__button {
+    margin-top: 30px;
+}

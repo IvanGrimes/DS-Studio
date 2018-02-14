@@ -1,0 +1,30 @@
+.header {
+    position: absolute;
+    z-index: 6;
+
+    border-bottom: 1px solid #7f7f7f;
+    background-color: transparent;
+
+    @include media-breakpoint-only(xl) {
+
+    }
+}
+
+.header__logo {
+    width: 86%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-only(xl) {
+        width: auto;
+    }
+    @include media-breakpoint-only(lg) {
+        width: auto;
+    }
+    @include media-breakpoint-only(md) {
+        width: auto;
+    }
+    @include media-breakpoint-only(sm) {
+        width: auto;
+    }
+}

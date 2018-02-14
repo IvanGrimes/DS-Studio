@@ -1,0 +1,51 @@
+.button {
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: OpenSans;
+    font-weight: 500;
+    line-height: 2.85em;
+}
+
+.button_size_l {
+    width: 150px;
+    height: 45px;
+
+    font-size: 1em;
+}
+
+.button_size_s {
+    float: left;
+
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+
+    font-size: .875em;
+}
+
+.button_color_black {
+    color: #fff;
+    background-color: $secondary-color;
+}
+
+.button_color_transparent {
+    transition: all .5s ease;
+
+    background-color: transparent;
+
+    border: 1px solid $secondary-color;
+    &:hover {
+        border: 1px solid $primary-color;
+    }
+}
+
+.button_state_active {
+    border: 1px solid transparent;
+    background-color: $primary-color;
+    &:hover {
+        color: #fff;
+    }
+}

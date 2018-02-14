@@ -1,0 +1,116 @@
+.feature-slider {
+  position: relative;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  color: #fff;
+}
+
+.feature-slider_viewport {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.feature-slider_list {
+  -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.feature-slider_item {
+  float: left;
+}
+
+.feature-slider_nav.is-hidden {
+  display: none;
+}
+
+.feature-slider_control-nav {
+  width: 100%;
+  margin-top: 50px;
+
+  text-align: center;
+}
+
+.feature-slider_control-nav-item_active {
+    border: 1px solid $primary-color;
+    border-radius: 1.5%;
+    border-radius: 1.5%;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+
+    @include media-breakpoint-up(sm) {
+        border: 3px solid $primary-color;
+        &::before {
+            margin-top: -14px;
+            margin-left: -5px;
+
+            border-width: 0 6px 12px 6px;
+        }
+    }
+    &::before {
+        position: absolute;
+
+        width: 0;
+        height: 0;
+        margin-top: -7px;
+        margin-left: -4px;
+
+        content: '';
+
+        border-width: 0 4px 6px 4px;
+        border-style: solid;
+        border-color: transparent transparent $primary-color transparent;
+    }
+}
+
+.feature-slider_arrow {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.feature-slider_arrow.is-hidden {
+  display: none;
+}
+
+
+.feature-slider_control-nav-item {
+  display: inline-block;
+
+  width: 11.11111%;
+
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.feature-slider_control-nav-item:not(.feature-slider_control-nav-item_active) {
+    &:hover {
+        border: 6px solid #fff;
+
+    }
+}
+
+.feature-slider_control-nav-item.feature-slider_control-nav-item_active {
+    position: relative;
+    z-index: 2;
+}
+
+@for $i from 0 through 8 {
+    .#{feature-slider_control-nav-img}#{$i} {
+        position: relative;
+        z-index: 1;
+
+        background-image: url(../img/item_#{$i}.png);
+        background-position: center center;
+        background-size: cover;
+    }
+}

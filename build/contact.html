@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="offcanvas offcanvas__menu">
+          <a class="offcanvas__close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="offcanvas__link" href="index.html">Home</a>
+          <a class="offcanvas__link" href="about.html">About</a>
+          <a class="offcanvas__link" href="portfolio.html">Portfolio</a>
+          <a class="offcanvas__link" href="blog.html">Our blog</a>
+          <a class="offcanvas__link" href="contact.html">Contact us</a>
+        </div>
+        
+        <div class="header container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="logo header__logo col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                        <img class="logo__image" src="img/logo.png" alt="">
+                        <span class="logo__name">Ds Studio</span>
+                        <span class="logo__spec">Photography</span>
+                    </div>
+        
+                    <span class="offcanvas offcanvas__open" onclick="openNav()">
+                        &#xf0c9;
+                    </span>
+        
+                    <ul class="nav col-xl-7 offset-xl-2">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="blog.html">Our blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact us</a>
+                            <span class="nav__separator">|</span>
+                        </li>
+        
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf09a;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf099;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf0d5;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf16d;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="breadcrumbs breadcrumbs__background">
+            <div class="breadcrumbs__block container">
+                <a class="breadcrumbs__link" href="index.html">Home</a> / <span class="breadcrumbs__page">Contact Us</span>
+                <h1 class="breadcrumbs__title">Contact us</h1>
+            </div>
+        </div>
+        
+        
+        <div class="section section_color_white container-fluid">
+            <div class="container">
+        
+                <div class="map">
+                    <img src="img/map.png" alt="">
+                </div>
+        
+                <div class="contacts__block row">
+                    <div class="col-lg-9">
+                        <div class="heading row">
+                            <div class="heading__title col-xl-3 col-lg-4 col-md-4 col-sm-5">
+                                <h4 class="heading_color_black heading_size_l">
+                                    Get in touch
+                                </h4>
+                            </div>
+        
+                            <div class="heading__separator-2 col-xl-2 col-lg-3 col-md-8 col-sm-7"></div>
+                        </div>
+        
+                        <p class="text contacts__text">
+                            Proin sed justo dignissim elit tristique elementum eu eu lectus. Phasellus semper faucibus nibh, quis ornare odio scelerisque a. Etiam diam ex, condimentum sed vestibulum quis, sollicitudin vel lorem. Etiam varius justo a fermentum finibus. Suspendisse id mi commodo, ultricies augue ut, condimentum lacus.
+                        </p>
+        
+                        <form class="feedback row" action="index.html" method="post">
+                            <div class="col-lg-4">
+                                <label class="feedback__label" for="name">Name*</label>
+                                <input class="feedback__input" type="text" name="name" value="" placeholder="Type your name" required>
+                            </div>
+        
+                            <div class="col-lg-4">
+                                <label class="feedback__label" for="name">Phone Number*</label>
+                                <input class="feedback__input" type="text" name="phone" value="" placeholder="Type your name" required>
+                            </div>
+        
+                            <div class="col-lg-4">
+                                <label class="feedback__label" for="name">Email*</label>
+                                <input class="feedback__input" type="text" name="email" value="" placeholder="Type your name" required>
+                            </div>
+        
+                            <div class="col-xl-12">
+                                <label class="feedback__label" for="message">Message*</label>
+                                <textarea class="feedback__message" name="message" placeholder="Type your message" required></textarea>
+                            </div>
+        
+                            <div class="col-xl-2">
+                                <button class="button button_size_l button_color_black feedback__button" type="button" name="button">
+                                    Send message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+        
+                    <div class="col-lg-3">
+                        <div class="heading row">
+                            <div class="heading__title col-xl-8 col-lg-9 col-md-4 col-sm-5">
+                                <h4 class="heading_color_black heading_size_l">
+                                    Contact us
+                                </h4>
+                            </div>
+        
+                            <div class="heading__separator-2 col-xl-4 col-lg-3 col-md-8 col-sm-7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section_color_dark container-fluid">
+            <div class="footer container">
+                <div class="contacts row">
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf095;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            1111 - 222 - 4444<br />
+                            1 800 12345 Hello
+                        </span>
+                    </div>
+        
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf0e0;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            dsstudio@example.com<br />
+                            info@dsstudio.com
+                        </span>
+                    </div>
+        
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf041;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            66 Town St - Suite 522<br />
+                            Newyork, United States, GA 11111
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="logo footer__logo col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                        <img class="logo__image" src="img/logo.png" alt="">
+                        <span class="logo__name">Ds Studio</span>
+                        <span class="logo__spec">Photography</span>
+                    </div>
+        
+                    <div class="social-footer col-xl-12">
+                        <a class="social-footer__item" href="#">&#xf09a;</a>
+                        <a class="social-footer__item" href="#">&#xf099;</a>
+                        <a class="social-footer__item" href="#">&#xf0d5;</a>
+                        <a class="social-footer__item" href="#">&#xf16d;</a>
+                        <a class="social-footer__item" href="#">&#xf231;</a>
+                        <a class="social-footer__item" href="#">&#xf0e1;</a>
+                        <a class="social-footer__item" href="#">&#xf16a;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyrights container-fluid">
+            <span class="text text_color_light">Copyrights &copy; 2017 | </span>
+            <span class="text text_color_yellow">DS Studio</span>
+            <span class="text text_color_light"> | All rights reserved.</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

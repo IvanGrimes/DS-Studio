@@ -1,0 +1,43 @@
+.paginator {
+    font-family: Opensans, FontAwesome;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 10px 25px;
+    border: 1px solid #cccccc;
+    line-height: 1.875em;
+}
+
+.paginator__control {
+    font-size: 1.25em;
+    color: $secondary-color;
+}
+
+.pagintaor_prev {
+    float: left;
+}
+
+.paginator_next {
+    float: right;
+}
+
+.paginator__items {
+    margin: 0 auto;
+}
+
+.pagintaor__item {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: $secondary-color;
+    font-size: 1em;
+    text-align: center;
+    &:not(.paginator_item_active) {
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.paginator_item_active {
+    background-color: $primary-color;
+}

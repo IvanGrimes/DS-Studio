@@ -1,0 +1,48 @@
+.blog-sidebar {
+    font-family: Opensans, FontAwesome;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.375em;
+}
+
+.blog-sidebar__title {
+    color:  $secondary-color;
+    font-size: 1.125em;/* Приближение из-за подстановки шрифтов */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+    @include media-breakpoint-up(lg) {
+        margin-top: 50px;
+        &:first-child {
+            margin-top: 0
+        }
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 40px;
+        padding-left: 15px;
+        &:first-child {
+            margin-top: 0
+        }
+    }
+}
+
+.blog-sidebar_sm_down {
+    display: block;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.blog-sidebar_md_only {
+    display: none;
+    @include media-breakpoint-only(md) {
+        display: block;
+    }
+}
+
+.blog-sidebar_lg_up {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        margin-top: 25px;
+        display: block
+    }
+}

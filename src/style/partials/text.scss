@@ -1,0 +1,17 @@
+.text {
+    font-family: OpenSans;
+    font-size: .875em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+}
+
+.text_color_dark {
+    color:  #686868;
+}
+
+.text_color_light {
+    color: #909090;
+}
+
+.text_color_yellow {
+    color: $primary-color;
+}

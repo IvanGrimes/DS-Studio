@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "components-font-awesome": "^4.7.0",
+    "filterizr": "^1.2.5",
+    "coreSlider": "^1.2.2",
+    "avalanche-css": "^1.3.0"
+  },
+  "devDependencies": {
+    "mixitup": "^3.2.2"
+  }
+}

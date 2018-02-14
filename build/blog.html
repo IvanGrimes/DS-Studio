@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="offcanvas offcanvas__menu">
+          <a class="offcanvas__close" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="offcanvas__link" href="index.html">Home</a>
+          <a class="offcanvas__link" href="about.html">About</a>
+          <a class="offcanvas__link" href="portfolio.html">Portfolio</a>
+          <a class="offcanvas__link" href="blog.html">Our blog</a>
+          <a class="offcanvas__link" href="contact.html">Contact us</a>
+        </div>
+        
+        <div class="header container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="logo header__logo col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                        <img class="logo__image" src="img/logo.png" alt="">
+                        <span class="logo__name">Ds Studio</span>
+                        <span class="logo__spec">Photography</span>
+                    </div>
+        
+                    <span class="offcanvas offcanvas__open" onclick="openNav()">
+                        &#xf0c9;
+                    </span>
+        
+                    <ul class="nav col-xl-7 offset-xl-2">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="blog.html">Our blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Contact us</a>
+                            <span class="nav__separator">|</span>
+                        </li>
+        
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf09a;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf099;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf0d5;</a>
+                        </li>
+                        <li class="nav__social">
+                            <a class="nav__link" href="#">&#xf16d;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs breadcrumbs__background">
+            <div class="breadcrumbs__block container">
+                <a class="breadcrumbs__link" href="index.html">Home</a> / <span class="breadcrumbs__page">Our blog</span>
+                <h1 class="breadcrumbs__title">Our blog</h1>
+            </div>
+        </div>
+        
+        <div class="section section_color_white">
+            <div class="container">
+                <div class="row">
+        
+                    <div class="blog-sidebar blog-sidebar_sm_down col-12">
+                        <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="accordion__item col-12">
+                                <div class="accordion__heading" role="tab" id="headingOne">
+                                    <a class="accordion__title" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Categories
+                                    </a>
+                                </div>
+        
+                                <div id="collapseOne" class="accrodion__body collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="blog-categories">
+                                        <a href="blog.html" class="blog-categories__item">item1</a>
+                                        <a href="#" class="blog-categories__item">item2</a>
+                                        <a href="#" class="blog-categories__item">item3</a>
+                                        <a href="#" class="blog-categories__item">item4</a>
+                                        <a href="#" class="blog-categories__item">item5</a>
+                                        <a href="#" class="blog-categories__item">item6</a>
+                                        <a href="#" class="blog-categories__item">item7</a>
+                                        <a href="#" class="blog-categories__item">item8</a>
+                                        <a href="#" class="blog-categories__item">item9</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="accordion__item col-12">
+                                <div class="accordion__heading" role="tab" id="headingTwo">
+                                    <a class="accordion__title" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Latest news
+                                    </a>
+                                </div>
+        
+                                <div id="collapseTwo" class="accrodion__body collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="blog-latest">
+                                        <div class="blog-latest__item">
+                                            <img class="blog-latest__img" src="img/latest.png" alt="">
+                                            <p class="text blog-latest__text">
+                                                Vivamus ac nulla eu dui sollicitudin congue
+                                                <a class="blog-latest__link" href="fullpost.html">
+                                                    Read more
+                                                </a>
+                                            </p>
+                                        </div>
+        
+                                        <div class="blog-latest__item">
+                                            <img class="blog-latest__img" src="img/latest.png" alt="">
+                                            <p class="text blog-latest__text">
+                                                Vivamus ac nulla eu dui sollicitudin congue
+                                                <a class="blog-latest__link" href="fullpost.html">
+                                                    Read more
+                                                </a>
+                                            </p>
+                                        </div>
+        
+                                        <div class="blog-latest__item">
+                                            <img class="blog-latest__img" src="img/latest.png" alt="">
+                                            <p class="text blog-latest__text">
+                                                Vivamus ac nulla eu dui sollicitudin congue
+                                                <a class="blog-latest__link" href="fullpost.html">
+                                                    Read more
+                                                </a>
+                                            </p>
+                                        </div>
+        
+                                        <div class="blog-latest__item">
+                                            <img class="blog-latest__img" src="img/latest.png" alt="">
+                                            <p class="text blog-latest__text">
+                                                Vivamus ac nulla eu dui sollicitudin congue
+                                                <a class="blog-latest__link" href="fullpost.html">
+                                                    Read more
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="accordion__item col-12">
+                                <div class="accordion__heading" role="tab" id="headingThree">
+                                    <a class="accordion__title" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Tags
+                                    </a>
+                                </div>
+        
+                                <div id="collapseThree" class="accrodion__body collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="blog-tags">
+                                        <button class="button button_size_s button_state_active blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                        <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="blog-sidebar blog-sidebar_md_only">
+                        <div class="row">
+                            <div class="blog-categories col-md-6">
+                                <h5 class="blog-sidebar__title">Categories</h5>
+                                <a href="blog.html" class="blog-categories__item">item1</a>
+                                <a href="#" class="blog-categories__item">item2</a>
+                                <a href="#" class="blog-categories__item">item3</a>
+                                <a href="#" class="blog-categories__item">item4</a>
+                                <a href="#" class="blog-categories__item">item5</a>
+                                <a href="#" class="blog-categories__item">item6</a>
+                                <a href="#" class="blog-categories__item">item7</a>
+                                <a href="#" class="blog-categories__item">item8</a>
+                                <a href="#" class="blog-categories__item">item9</a>
+                            </div>
+        
+                            <div class="blog-latest col-md-6">
+                                <h5 class="blog-sidebar__title">Latest news</h5>
+                                <div class="blog-latest__item">
+                                    <img class="blog-latest__img" src="img/latest.png" alt="">
+                                    <p class="text blog-latest__text">
+                                        Vivamus ac nulla eu dui sollicitudin congue
+                                        <a class="blog-latest__link" href="fullpost.html">
+                                            Read more
+                                        </a>
+                                    </p>
+                                </div>
+        
+                                <div class="blog-latest__item">
+                                    <img class="blog-latest__img" src="img/latest.png" alt="">
+                                    <p class="text blog-latest__text">
+                                        Vivamus ac nulla eu dui sollicitudin congue
+                                        <a class="blog-latest__link" href="fullpost.html">
+                                            Read more
+                                        </a>
+                                    </p>
+                                </div>
+        
+                                <div class="blog-latest__item">
+                                    <img class="blog-latest__img" src="img/latest.png" alt="">
+                                    <p class="text blog-latest__text">
+                                        Vivamus ac nulla eu dui sollicitudin congue
+                                        <a class="blog-latest__link" href="fullpost.html">
+                                            Read more
+                                        </a>
+                                    </p>
+                                </div>
+        
+                                <div class="blog-latest__item">
+                                    <img class="blog-latest__img" src="img/latest.png" alt="">
+                                    <p class="text blog-latest__text">
+                                        Vivamus ac nulla eu dui sollicitudin congue
+                                        <a class="blog-latest__link" href="fullpost.html">
+                                            Read more
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <div class="blog-tags">
+                                <h5 class="blog-sidebar__title">Tags</h5>
+                                <button class="button button_size_s button_state_active blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                                <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="blog blog__page col-xl-8 col-lg-8">
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="blog__item">
+                            <img class="blog__image" src="img/blogpage.png" alt="">
+                            <div class="blog__content blog__page">
+                                <div class="heading">
+                                    <a class="heading__title heading_color_black heading_size_m blog__link" href="fullpost.html">
+                                        Blog Title here
+                                    </a>
+                                </div>
+        
+        
+                                <span class="blog__author">
+                                    By Admin |
+                                </span>
+        
+                                <span class="blog__date">
+                                    22 August
+                                </span>
+        
+                                <p class="text blog__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam ante diam, malesuada quis lacinia vitae, volutpat at lacus.
+                                </p>
+        
+                                <a class="button button_size_s button_color_black blog__button" href="fullpost.html">Read more</a>
+                            </div>
+                        </div>
+        
+                        <div class="paginator col-12">
+                            <div class="row">
+                                <a class="paginator__control pagintaor_prev" href="#">&#xf137;</a>
+        
+                                <div class="paginator__items">
+                                    <a class="pagintaor__item paginator_item_active" href="#">1</a>
+                                    <a class="pagintaor__item" href="#">2</a>
+                                    <a class="pagintaor__item" href="#">3</a>
+                                    <a class="pagintaor__item" href="#">4</a>
+                                    <a class="pagintaor__item" href="#">5</a>
+                                    <a class="pagintaor__item" href="#">6</a>
+                                </div>
+        
+                                <a class="paginator__control paginator_next" href="#">&#xf138;</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="blog-sidebar blog-sidebar_lg_up col-xl-4 col-lg-4">
+                        <h5 class="blog-sidebar__title">Categories</h5>
+                        <div class="blog-categories">
+                            <a href="blog.html" class="blog-categories__item">item1</a>
+                            <a href="#" class="blog-categories__item">item2</a>
+                            <a href="#" class="blog-categories__item">item3</a>
+                            <a href="#" class="blog-categories__item">item4</a>
+                            <a href="#" class="blog-categories__item">item5</a>
+                            <a href="#" class="blog-categories__item">item6</a>
+                            <a href="#" class="blog-categories__item">item7</a>
+                            <a href="#" class="blog-categories__item">item8</a>
+                            <a href="#" class="blog-categories__item">item9</a>
+                        </div>
+        
+                        <h5 class="blog-sidebar__title">Latest news</h5>
+                        <div class="blog-latest">
+                            <div class="blog-latest__item">
+                                <img class="blog-latest__img" src="img/latest.png" alt="">
+                                <p class="text blog-latest__text">
+                                    Vivamus ac nulla eu dui sollicitudin congue
+                                    <a class="blog-latest__link" href="fullpost.html">
+                                        Read more
+                                    </a>
+                                </p>
+                            </div>
+        
+                            <div class="blog-latest__item">
+                                <img class="blog-latest__img" src="img/latest.png" alt="">
+                                <p class="text blog-latest__text">
+                                    Vivamus ac nulla eu dui sollicitudin congue
+                                    <a class="blog-latest__link" href="fullpost.html">
+                                        Read more
+                                    </a>
+                                </p>
+                            </div>
+        
+                            <div class="blog-latest__item">
+                                <img class="blog-latest__img" src="img/latest.png" alt="">
+                                <p class="text blog-latest__text">
+                                    Vivamus ac nulla eu dui sollicitudin congue
+                                    <a class="blog-latest__link" href="fullpost.html">
+                                        Read more
+                                    </a>
+                                </p>
+                            </div>
+        
+                            <div class="blog-latest__item">
+                                <img class="blog-latest__img" src="img/latest.png" alt="">
+                                <p class="text blog-latest__text">
+                                    Vivamus ac nulla eu dui sollicitudin congue
+                                    <a class="blog-latest__link" href="fullpost.html">
+                                        Read more
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+        
+                        <h5 class="blog-sidebar__title">Tags</h5>
+                        <div class="blog-tags">
+        
+                            <button class="button button_size_s button_state_active blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                            <button class="button button_size_s button_color_transparent blog-tags__button">12312312</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section section_color_dark container-fluid">
+            <div class="footer container">
+                <div class="contacts row">
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf095;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            1111 - 222 - 4444<br />
+                            1 800 12345 Hello
+                        </span>
+                    </div>
+        
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf0e0;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            dsstudio@example.com<br />
+                            info@dsstudio.com
+                        </span>
+                    </div>
+        
+                    <div class="contacts__item footer__item col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        <i class="contacts__icon footer__icon">
+                            &#xf041;
+                        </i>
+        
+                        <span class="text text_color_light footer__text">
+                            66 Town St - Suite 522<br />
+                            Newyork, United States, GA 11111
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="logo footer__logo col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                        <img class="logo__image" src="img/logo.png" alt="">
+                        <span class="logo__name">Ds Studio</span>
+                        <span class="logo__spec">Photography</span>
+                    </div>
+        
+                    <div class="social-footer col-xl-12">
+                        <a class="social-footer__item" href="#">&#xf09a;</a>
+                        <a class="social-footer__item" href="#">&#xf099;</a>
+                        <a class="social-footer__item" href="#">&#xf0d5;</a>
+                        <a class="social-footer__item" href="#">&#xf16d;</a>
+                        <a class="social-footer__item" href="#">&#xf231;</a>
+                        <a class="social-footer__item" href="#">&#xf0e1;</a>
+                        <a class="social-footer__item" href="#">&#xf16a;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyrights container-fluid">
+            <span class="text text_color_light">Copyrights &copy; 2017 | </span>
+            <span class="text text_color_yellow">DS Studio</span>
+            <span class="text text_color_light"> | All rights reserved.</span>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

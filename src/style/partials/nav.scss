@@ -1,0 +1,64 @@
+.nav {
+    display: none;
+
+    @include media-breakpoint-only(xl) {
+        display: block;
+
+        padding-top: 45px;
+
+        list-style-type: none;
+
+        text-transform: uppercase;
+
+        font-family: Opensans, FontAwesome;
+        font-size: .9375em;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        line-height: 1.375em;/* Приближение из-за подстановки шрифтов */
+    }
+}
+
+.nav__item {
+    @include media-breakpoint-only(xl) {
+        float: left;
+
+        margin-left: 35px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:nth-child(5) {
+            margin-right: 20px;
+        }
+    }
+}
+
+.nav__link {
+    @include media-breakpoint-only(xl) {
+        color: #fff;
+        transition: all .15s linear;
+        &:hover {
+            text-decoration: none;
+
+            color: $primary-color;
+        }
+    }
+}
+
+.nav__separator {
+    margin-left: 10px;
+
+    color: #7f7f7f;
+
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+.nav__social {
+    @include media-breakpoint-only(xl) {
+        float: left;
+
+        margin-left: 10px;
+        &:nth-child(6) {
+            margin-left: -8px;
+        }
+    }
+}

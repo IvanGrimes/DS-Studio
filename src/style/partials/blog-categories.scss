@@ -1,0 +1,35 @@
+.blog-categories {
+    position: relative;
+}
+
+.blog-categories__item {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    color:  #353535;
+    font-size: .875em;/* Приближение из-за подстановки шрифтов */
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    bottom: 10px;
+    @include media-breakpoint-only(md) {
+        position: relative;
+        bottom: 10px;
+    }
+    @include media-breakpoint-down(sm) {
+        &:first-child {
+            margin-top: 10px;
+        }
+    }
+    &:last-child {
+        border: 0;
+    }
+    &:before {
+        position: absolute;
+        content: '\f101';
+        right: 20px;
+        font-weight: 400;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+}

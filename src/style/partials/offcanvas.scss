@@ -1,0 +1,68 @@
+.offcanvas {
+    font-family: Opensans, FontAwesome;
+    font-weight: 400;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.offcanvas__menu {
+    font-size: 1.5em;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: $section-primary-color;
+    overflow-x: hidden;
+    padding-top: 110px;
+}
+
+.offcanvas__open {
+    position: absolute;
+    right: 6%;
+    top: 30px;
+    font-size: 2em;
+    color: $primary-color;
+    cursor: pointer;
+    @include media-breakpoint-only(xl) {
+        display: none;
+    }
+    @include media-breakpoint-only(lg) {
+        right: 10%;
+    }
+    @include media-breakpoint-only(md) {
+        right: 12%;
+    }
+    @include media-breakpoint-only(sm) {
+        right: 15%;
+    }
+}
+
+.offcanvas__link {
+    text-decoration: none;
+    color: $secondary-color;
+    display: block;
+    transition: 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $secondary-color;
+    &:nth-child(2) {
+        border-top: 1px solid $secondary-color;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.offcanvas__close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+    }
+}
